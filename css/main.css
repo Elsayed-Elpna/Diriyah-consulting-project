@@ -110,6 +110,11 @@ textarea:not([rows]) {
 .navbar {
   background-color: var(--clr-white);
 }
+
+.navbar .container {
+  display: flex;
+  flex-wrap: wrap;
+}
 .navbar .navbar-collapse .navbar-nav {
   justify-content: space-between !important;
   gap: 25px;
@@ -150,8 +155,15 @@ textarea:not([rows]) {
   max-width: 80%;
 }
 @media screen and (max-width: 991px) {
-  .navbar > .container {
-    flex-wrap: nowrap;
+  .navbar-brand {
+    width: 70%;
+  }
+  .navbar .navbar-collapse .navbar-nav {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
   }
 }
 /* ------- navbar  end ------- */
