@@ -149,6 +149,11 @@ textarea:not([rows]) {
 .navbar .container .navbar-brand img {
   max-width: 80%;
 }
+@media screen and (max-width: 991px) {
+  .navbar > .container {
+    flex-wrap: nowrap;
+  }
+}
 /* ------- navbar  end ------- */
 /* ------- header-section  start ------- */
 /* header-section head-start */
