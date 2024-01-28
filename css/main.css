@@ -79,6 +79,10 @@ a:not([class]) {
   color: currentColor;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -795,3 +799,46 @@ footer .container .footer-copyright .copyright img {
   }
 }
 /* ------- footer end ------- */
+/* ------- breadcrumb start ------- */
+.breadcrumb-section {
+  background-color: var(--clr-blue-300);
+}
+
+.breadcrumb-section .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 0px 9px;
+}
+
+.breadcrumb-section .container div {
+  vertical-align: baseline;
+}
+
+.breadcrumb-section .container h3 {
+  font-size: 1.125rem;
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+}
+
+.breadcrumb-section .container ol {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.breadcrumb-section .container ol > * {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: var(--fw-light);
+  color: var(--clr-white);
+}
+
+@media (max-width: 991px) {
+  .breadcrumb-section .container ol {
+    display: none;
+  }
+  .breadcrumb-section .container {
+    justify-content: center;
+  }
+}
+/* ------- breadcrumb end ------- */
