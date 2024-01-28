@@ -12,15 +12,15 @@ var counselorSlider = new Swiper(".counselor-section .swiper-container", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 15,
     },
     767: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 15,
     },
     992: {
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 30,
     },
     1199: {
@@ -28,9 +28,6 @@ var counselorSlider = new Swiper(".counselor-section .swiper-container", {
       spaceBetween: 30,
     },
   },
-  on: {
-    init: function (swiper) {
-      lazyLoad();
-    },
-  },
 });
+
+new WOW().init();
