@@ -1,0 +1,177 @@
+/* colors */
+:root {
+  --clr-white: #ffffff;
+  --clr-blue-300: #193498;
+  --clr-yellow-300: #fca120;
+
+  /* font weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "montserrat", sans-serif;
+  direction: rtl;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+*:hover {
+  transition: all 0.3s ease-out;
+}
+
+/* ---------- service-section ---------- */
+
+.service-stn {
+  margin: 61px auto 120px;
+}
+
+.service-stn .container .head p {
+  font-size: 1.125rem;
+  font-weight: var(--fw-light);
+  color: var(--clr-blue-300);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-inline: auto;
+  max-width: 1120px;
+}
+
+.service-stn .container .head p:last-child {
+  font-weight: var(--fw-bold);
+}
+
+/* ---------- service-section  (grid-stc)---------- */
+.service-stn .container .body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 30px;
+  margin-top: 51px;
+}
+.service-stn .container .body .service-card a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: var(--clr-blue-300);
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  padding: 45px 30px 15px;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid #ededed;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-stn .container .body .service-card a img {
+  overflow: hidden;
+  width: fit-content;
+  margin-bottom: 35px;
+  width: 76px;
+  height: 65px;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-stn .container .body .service-card a span {
+  min-height: 42px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .service-stn .container .body {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}

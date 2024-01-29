@@ -840,5 +840,8 @@ footer .container .footer-copyright .copyright img {
   .breadcrumb-section .container {
     justify-content: center;
   }
+  .breadcrumb-section .container {
+    padding: 20px 0px;
+  }
 }
 /* ------- breadcrumb end ------- */

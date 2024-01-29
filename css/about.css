@@ -183,3 +183,26 @@ textarea:not([rows]) {
 }
 
 /* ----- header-section end ---- */
+/* ----- targets-section start ---- */
+.targets-section .container {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.targets-section .container h2 {
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-blue-300);
+  margin-bottom: 37px;
+}
+
+.targets-section .container ol {
+  list-style-image: url(../images/main/icon.png);
+}
+
+.targets-section .container ol li {
+  font-size: 1.25rem;
+  font-weight: var(--fw-light);
+  color: var(--clr-blue-300);
+  margin-bottom: 1rem;
+}
+/* ----- targets-section end ---- */
